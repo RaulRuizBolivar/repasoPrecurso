@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+figure{
+    width: 900px;
+    background-image: url(../images/chica.jpg);
+    background-size: cover;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /*Me permite decidir cuanto ocupa cada elemento*/
+}
+figure div{
+    width: 33.333%;
+    height: 33.333%;
+    border: 15px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+figure div:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+figure div p{
+    display: none;
+}
+figure div:hover p{
+    display: block;
+}

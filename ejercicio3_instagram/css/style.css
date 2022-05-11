@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    background-image: url(../images/chica.jpg);
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper div{
+    border: 10px solid white;
+    width: 33.333%;
+    display: flex;
+    color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper div:hover{
+    background-color: white;
+    opacity: 50%;
+    color: black;
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+header{
+    display: flex;
+    height: 100vh;
+}
+header>div{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+header>div h2 , header>div h3{
+    padding: 20px;
+}
+header div:first-child , header div:first-child div{
+    background-color: coral;
+}
+header div:nth-child(2) ,header div:nth-child(2) div{
+    background-color: lightcoral;
+}
+header div:nth-child(3) , header div:nth-child(3) div{
+    background-color: lightgoldenrodyellow;
+}
+header div:last-child , header div:last-child div{
+    background-color: lightgreen;
+}
+hr{
+    position: absolute;
+    color: white;
+    width: 100%;
+}

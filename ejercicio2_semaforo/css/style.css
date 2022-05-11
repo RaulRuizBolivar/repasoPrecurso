@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --ancho: 500px;
+    --alto: 50px;
+    --verde: #317f43;
+}
+div{
+    background-color: var(--verde);
+    margin: 0 auto;
+}
+.wrapper{
+    margin: 10px auto;
+    width: var(--ancho);
+    background-color: transparent;
+}
+.arriba{
+    width: 50%;
+    height: var(--alto);
+    border-radius: calc(var(--alto)/2) calc(var(--alto)/2) 0px 0px;
+}
+.casiArriba{
+    width: 75%;
+    height: var(--alto);
+}
+.cuerpo{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.color{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: 10px auto;
+}
+.rojo{
+    background-color: red;
+}
+.verde{
+    background-color: greenyellow;
+}
+.amarillo{
+    background-color: yellow;
+}
+.palo{
+    height: calc(var(--alto)*10);
+    width: 10%;
+}
+.pie{
+    width: 100%;
+    height: var(--alto);
+}
