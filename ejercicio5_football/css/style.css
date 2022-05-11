@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+div{
+    border: 1px solid white;
+}
+.campo{
+    width: 650px;
+    height: 1000px;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.areaGrande{
+    width: 70%;
+    height: 200px;
+    display: inherit;
+    justify-content: center;
+}
+.arriba{
+    border-top: 0px solid white;
+}
+.abajo{
+    border-bottom: 0px solid white;
+}
+.areaPeque{
+    width: 50%;
+    height: 100px;
+}
+.areaPeque.abajo{
+    margin-top: auto;
+}
+.circulo{
+    padding: 50px;
+    border-radius: 50%;
+}
+.centro{
+
+}
+.lineaCentral{
+    margin: auto;
+    width: 100%;
+}
