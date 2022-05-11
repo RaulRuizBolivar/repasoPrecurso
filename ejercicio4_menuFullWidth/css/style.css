@@ -6,38 +6,71 @@
 }
 body{
     font-family: 'Rajdhani', sans-serif;
-    color: white;
 }
 header{
     display: flex;
-    height: 100vh;
 }
-header>div{
+header>a{
+    display: block;
     width: 25%;
-    height: 100%;
+    height: 100vh;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+header>a hr{
+    border: 1px solid white;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    opacity: 0;
+}
+header>a:hover hr{
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+header>a>div{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    height: 100%;
+}
+header>a>div>div{
+    z-index: 11;
+    padding: 50px;
     text-align: center;
 }
-header>div h2 , header>div h3{
-    padding: 20px;
+header>a>div>div>p{
+    font-size: 24px;
 }
-header div:first-child , header div:first-child div{
-    background-color: coral;
+header>a>div>div>small{
+    color: transparent;
+    font-size: 20px;
 }
-header div:nth-child(2) ,header div:nth-child(2) div{
+header>a:hover>div>div>small{
+    color: white;
+    transition: .3s ease-in-out;
+}
+header>a.rojo>div>div , .rojo{
     background-color: lightcoral;
 }
-header div:nth-child(3) , header div:nth-child(3) div{
+header>a.naranja>div>div , .naranja{
+    background-color: lightsalmon;
+}
+header>a.amarillo>div>div , .amarillo{
     background-color: lightgoldenrodyellow;
 }
-header div:last-child , header div:last-child div{
+header>a.verde>div>div , .verde{
     background-color: lightgreen;
 }
-hr{
-    position: absolute;
-    color: white;
-    width: 100%;
+@media(max-width: 800px){
+    header{
+        flex-direction: column;
+        height: 100vh;
+    }
+    header>a{
+        height: 25%;
+        width: 100%;
+    }
 }
